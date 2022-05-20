@@ -10,7 +10,7 @@ for line in xfile:
     count = count + 1
 print('Line count', count) """
 
-pfile = input('Enter the file name:')
+""" pfile = input('Enter the file name:')
 try:
     p1file = open(pfile)
 except:
@@ -21,5 +21,12 @@ for line in p1file:
     if line.startswith('Subject:'):
         count = count + 1
 print('There were', count, ' subject line in', pfile)  
+ """
+
+fh = open('mbox-short.txt')
+print(fh)
+for line in fh:
+    ly = line.rstrip()
+    print(ly.upper())
 
 
