@@ -25,3 +25,4 @@ b = str[a+1:]
 print(b)
 value = float(b)
 print(value)
+
