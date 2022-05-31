@@ -2,8 +2,7 @@
 hand = open('mbox-short.txt')
 for line in hand:
     line =line.rstrip()
-    #if line.find('From:') >= 0:
-    if re.search('from:', line):
+    if line.find('From:') >= 0:
         print(line)
 # ----- RegEx B -----
 
