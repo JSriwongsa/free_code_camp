@@ -41,16 +41,21 @@ line = data
 y = re.findall('@([^ ]*)', line)  #--- [^] = non blank character---
 print(y) """
 
+
 import re
 hand = open('mbox.txt')
-numlist = list
+numlist = list()
 for line in hand:
     line = line.rstrip()
-    stuff = re.findall('^X-DSPAM-Confidemce: ([0-9.]+)', line)
+    stuff = re.findall('^X-DSPAM-Confidence: ([0-9.]+)', line)
     if len(stuff) != 1 : continue
-    num = float(stuff([0]))
+    num = float(stuff[0])
+    print(num)
+    print(numlist)
     numlist.append(num)
+
 print('Maximum:', max(numlist))
+
 
 
 """ x = ' we just got $10.00 for cookies'      #----- run w/ import re -----
