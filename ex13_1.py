@@ -26,7 +26,8 @@ while True_:
         s = u['status']['text']
         print(' ', s[:50]) """    #--- request for the key ---
 
- #----- Exercise_geojason -----
+ #----- Exercise_geojason in code3 -----
+ #----- Exercise_json in code3(json1&json2) -----
 
 
 
