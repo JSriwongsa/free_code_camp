@@ -37,4 +37,4 @@ data = '''
   ]
 '''
 info = json.loads(data)
-print(info[0]['name'])
+print(info[1]['name'])
